@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0424-longest-repeating-character-replacement](https://github.com/tarun372/problems/tree/master/0424-longest-repeating-character-replacement) |
 | [0844-backspace-string-compare](https://github.com/tarun372/problems/tree/master/0844-backspace-string-compare) |
 ## Stack
 |  |
@@ -56,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/tarun372/problems/tree/master/0209-minimum-size-subarray-sum) |
+| [0424-longest-repeating-character-replacement](https://github.com/tarun372/problems/tree/master/0424-longest-repeating-character-replacement) |
 | [0904-fruit-into-baskets](https://github.com/tarun372/problems/tree/master/0904-fruit-into-baskets) |
 ## Prefix Sum
 |  |
@@ -64,5 +66,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0424-longest-repeating-character-replacement](https://github.com/tarun372/problems/tree/master/0424-longest-repeating-character-replacement) |
 | [0904-fruit-into-baskets](https://github.com/tarun372/problems/tree/master/0904-fruit-into-baskets) |
 <!---LeetCode Topics End-->
