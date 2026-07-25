@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0075-sort-colors](https://github.com/tarun372/problems/tree/master/0075-sort-colors) |
 | [0141-linked-list-cycle](https://github.com/tarun372/problems/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/tarun372/problems/tree/master/0142-linked-list-cycle-ii) |
+| [0143-reorder-list](https://github.com/tarun372/problems/tree/master/0143-reorder-list) |
 | [0202-happy-number](https://github.com/tarun372/problems/tree/master/0202-happy-number) |
 | [0234-palindrome-linked-list](https://github.com/tarun372/problems/tree/master/0234-palindrome-linked-list) |
 | [0287-find-the-duplicate-number](https://github.com/tarun372/problems/tree/master/0287-find-the-duplicate-number) |
@@ -49,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0143-reorder-list](https://github.com/tarun372/problems/tree/master/0143-reorder-list) |
 | [0234-palindrome-linked-list](https://github.com/tarun372/problems/tree/master/0234-palindrome-linked-list) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/tarun372/problems/tree/master/0581-shortest-unsorted-continuous-subarray) |
 | [0844-backspace-string-compare](https://github.com/tarun372/problems/tree/master/0844-backspace-string-compare) |
@@ -105,6 +107,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0141-linked-list-cycle](https://github.com/tarun372/problems/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/tarun372/problems/tree/master/0142-linked-list-cycle-ii) |
+| [0143-reorder-list](https://github.com/tarun372/problems/tree/master/0143-reorder-list) |
 | [0234-palindrome-linked-list](https://github.com/tarun372/problems/tree/master/0234-palindrome-linked-list) |
 | [0876-middle-of-the-linked-list](https://github.com/tarun372/problems/tree/master/0876-middle-of-the-linked-list) |
 ## Math
@@ -118,5 +121,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Recursion
 |  |
 | ------- |
+| [0143-reorder-list](https://github.com/tarun372/problems/tree/master/0143-reorder-list) |
 | [0234-palindrome-linked-list](https://github.com/tarun372/problems/tree/master/0234-palindrome-linked-list) |
 <!---LeetCode Topics End-->
