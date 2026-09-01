@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0287-find-the-duplicate-number](https://github.com/tarun372/problems/tree/master/0287-find-the-duplicate-number) |
 | [0457-circular-array-loop](https://github.com/tarun372/problems/tree/master/0457-circular-array-loop) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/tarun372/problems/tree/master/0581-shortest-unsorted-continuous-subarray) |
+| [0724-find-pivot-index](https://github.com/tarun372/problems/tree/master/0724-find-pivot-index) |
 | [0904-fruit-into-baskets](https://github.com/tarun372/problems/tree/master/0904-fruit-into-baskets) |
 | [0977-squares-of-a-sorted-array](https://github.com/tarun372/problems/tree/master/0977-squares-of-a-sorted-array) |
 | [1004-max-consecutive-ones-iii](https://github.com/tarun372/problems/tree/master/1004-max-consecutive-ones-iii) |
@@ -97,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/tarun372/problems/tree/master/0209-minimum-size-subarray-sum) |
+| [0724-find-pivot-index](https://github.com/tarun372/problems/tree/master/0724-find-pivot-index) |
 | [1004-max-consecutive-ones-iii](https://github.com/tarun372/problems/tree/master/1004-max-consecutive-ones-iii) |
 ## Hash Table
 |  |
