@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0018-4sum](https://github.com/tarun372/problems/tree/master/0018-4sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/tarun372/problems/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0053-maximum-subarray](https://github.com/tarun372/problems/tree/master/0053-maximum-subarray) |
+| [0056-merge-intervals](https://github.com/tarun372/problems/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/tarun372/problems/tree/master/0075-sort-colors) |
 | [0152-maximum-product-subarray](https://github.com/tarun372/problems/tree/master/0152-maximum-product-subarray) |
 | [0209-minimum-size-subarray-sum](https://github.com/tarun372/problems/tree/master/0209-minimum-size-subarray-sum) |
@@ -45,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0016-3sum-closest](https://github.com/tarun372/problems/tree/master/0016-3sum-closest) |
 | [0018-4sum](https://github.com/tarun372/problems/tree/master/0018-4sum) |
+| [0056-merge-intervals](https://github.com/tarun372/problems/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/tarun372/problems/tree/master/0075-sort-colors) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/tarun372/problems/tree/master/0581-shortest-unsorted-continuous-subarray) |
 | [0977-squares-of-a-sorted-array](https://github.com/tarun372/problems/tree/master/0977-squares-of-a-sorted-array) |
@@ -149,4 +151,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0152-maximum-product-subarray](https://github.com/tarun372/problems/tree/master/0152-maximum-product-subarray) |
 | [1186-maximum-subarray-sum-with-one-deletion](https://github.com/tarun372/problems/tree/master/1186-maximum-subarray-sum-with-one-deletion) |
 | [1749-maximum-absolute-sum-of-any-subarray](https://github.com/tarun372/problems/tree/master/1749-maximum-absolute-sum-of-any-subarray) |
+## Quicksort
+|  |
+| ------- |
+| [0056-merge-intervals](https://github.com/tarun372/problems/tree/master/0056-merge-intervals) |
 <!---LeetCode Topics End-->
