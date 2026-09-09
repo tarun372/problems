@@ -5,32 +5,27 @@
 #         self.next = next
 class Solution:
     def removeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        # head = [5, 2, 13, 3, 8]
-        #         ^
-        #                ^
-        # 5 -> 2 -> 13 -> 3 -> 8
-        # 3 <- 2 <- 13 <- 3 <- 8
-
-        def reverse(nodeHead):
+        
+        def reverse(node):
             prev = None
-            curr = nodeHead
-            while curr:
-                nextNode = curr.next
-                curr.next = prev
-                prev = curr
-                curr = nextNode
+            while node:
+                nxt = node.next
+                node.next = prev
+                prev = node
+                node = nxt
             return prev
         
-        revHead = reverse(head)
-        curr = revHead
-        maxSeen = curr.val
+        head = reverse(head)
 
-        while curr.next:
-            if curr.next.val < maxSeen:
+        max_val = head.val
+        curr = head
+        
+        while curr and curr.next:
+            if curr.next.val < max_val:
                 curr.next = curr.next.next
             else:
-                maxSeen = curr.next.val
                 curr = curr.next
-
+                max_val = curr.val
         
-        return reverse(revHead)
+        return reverse(head)
+        
