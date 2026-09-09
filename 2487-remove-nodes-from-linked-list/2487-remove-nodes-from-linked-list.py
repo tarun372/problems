@@ -1,24 +1,40 @@
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
 class Solution:
     def removeNodes(self, head):
-        stack = []
+        if not head:
+            return None
+
+        # Helper function to reverse a linked list
+        def reverse_list(node):
+            prev = None
+            curr = node
+            while curr:
+                next_temp = curr.next
+                curr.next = prev
+                prev = curr
+                curr = next_temp
+            return prev
+
+        # 1. Reverse the entire list
+        head = reverse_list(head)
+
+        # 2. Filter out the smaller nodes
         curr = head
+        max_val = curr.val
         
-        # Phase 1: Filter out the smaller nodes using the stack
-        while curr:
-            # If the new node is BIGGER than the top of our stack, rip up the top note!
-            while stack and stack[-1].val < curr.val:
-                stack.pop()
-            
-            # Put the current node on the stack
-            stack.append(curr)
-            curr = curr.next
-            
-        # Phase 2: Link the surviving nodes back together
-        for i in range(len(stack) - 1):
-            stack[i].next = stack[i+1]
-            
-        # Make sure the very last node points to nothing
-        stack[-1].next = None
-        
-        # The bottom of the stack is the new head of our linked list
-        return stack[0]
+        while curr.next:
+            if curr.next.val < max_val:
+                # The next node is too small! Skip it (delete it).
+                curr.next = curr.next.next
+            else:
+                # The next node is big enough! Keep it and update max_val.
+                curr = curr.next
+                max_val = curr.val
+                
+        # 3. Reverse it back to normal
+        return reverse_list(head)
