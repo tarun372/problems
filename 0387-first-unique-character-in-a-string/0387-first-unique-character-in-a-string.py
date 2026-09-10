@@ -1,12 +1,14 @@
 class Solution:
     def firstUniqChar(self, s: str) -> int:
-        freq = {}
-
-        for c in s:
-            freq[c] = 1 + freq.get(c, 0)
+        char_count = {}
         
-        for i, c in enumerate(s):
-            if freq[c] == 1:
-                return i
+        # Count the frequency of each character
+        for char in s:
+            char_count[char] = char_count.get(char, 0) + 1
         
-        return -1
+        # Find the index of the first unique character
+        for index, char in enumerate(s):
+            if char_count[char] == 1:
+                return index
+        
+        return -1  # Return -1 if no unique character is found
