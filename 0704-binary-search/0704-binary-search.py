@@ -1,16 +1,16 @@
 class Solution:
-    def recursive_binary_search(self, nums: list[int], target: int, start: int, end: int) -> int:
-        if start <= end:
+    def search(self, nums: list[int], target: int) -> int:
+        start = 0
+        end = len(nums) - 1
+        
+        while start <= end:
             mid = start + (end - start) // 2
+            
             if nums[mid] == target:
                 return mid
-            elif nums[mid] >= target:
-                return self.recursive_binary_search(nums, target, start, mid - 1)
+            elif nums[mid] > target:
+                end = mid - 1
             else:
-                return self.recursive_binary_search(nums, target, mid + 1, end)
+                start = mid + 1
+                
         return -1
-
-    def search(self, nums: list[int], target: int) -> int:
-        st = 0
-        end = len(nums) - 1
-        return self.recursive_binary_search(nums, target, st, end)
