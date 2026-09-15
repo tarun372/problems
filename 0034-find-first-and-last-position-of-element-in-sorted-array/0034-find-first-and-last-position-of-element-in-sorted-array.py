@@ -1,20 +1,36 @@
-class Solution:
-    def searchRange(self, nums: List[int], target: int) -> List[int]:
-        return [self.binary(nums, target, True), self.binary(nums, target, False)]
-
-    def binary(self, nums, target, findFirst):
-        s, e = 0, len(nums) - 1
-        ans = -1
-        while s <= e:
-            mid = (s + e) // 2
-            if target > nums[mid]:
-                s = mid + 1
-            elif target < nums[mid]:
-                e = mid - 1
-            else:
-                ans = mid
-                if findFirst:
-                    e = mid - 1
-                else:
-                    s = mid + 1
-        return ans
+class Solution(object):
+    def searchRange(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        def first():
+            ans=-1
+            low=0
+            high=len(nums)-1
+            while(low<=high):
+                mid=(low+high)//2
+                if(target==nums[mid]):
+                    ans=mid
+                    high=mid-1
+                elif(nums[mid]>target):
+                    high=mid-1
+                elif(nums[mid]<target):
+                    low=mid+1
+            return ans
+        def last():
+            ans=-1
+            low=0
+            high=len(nums)-1
+            while(low<=high):
+                mid=(low+high)//2
+                if(target==nums[mid]):
+                    ans=mid
+                    low=mid+1
+                elif(target>nums[mid]):
+                    low=mid+1
+                elif(target<nums[mid]):
+                    high=mid-1
+            return ans
+        return [first(),last()]
