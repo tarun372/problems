@@ -1,14 +1,7 @@
 class Solution:
-    def peakIndexInMountainArray(self, arr):
-        low = 0
-        high = len(arr) - 1
-
-        while low < high:
-            mid = low + (high - low) // 2
-
-            if arr[mid] < arr[mid + 1]:
-                low = mid + 1
-            elif arr[mid] > arr[mid + 1]:
-                high = mid
-
-        return low
+    def peakIndexInMountainArray(self, arr: List[int]) -> int:
+        for i in range(2,len(arr)):
+            if arr[i]<arr[i-1] and arr[i-1]>arr[i-2]:
+                return i-1
+                break
+        
