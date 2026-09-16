@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1186-maximum-subarray-sum-with-one-deletion](https://github.com/tarun372/problems/tree/master/1186-maximum-subarray-sum-with-one-deletion) |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/tarun372/problems/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
 | [1749-maximum-absolute-sum-of-any-subarray](https://github.com/tarun372/problems/tree/master/1749-maximum-absolute-sum-of-any-subarray) |
+| [2226-maximum-candies-allocated-to-k-children](https://github.com/tarun372/problems/tree/master/2226-maximum-candies-allocated-to-k-children) |
 ## Two Pointers
 |  |
 | ------- |
@@ -127,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0875-koko-eating-bananas](https://github.com/tarun372/problems/tree/master/0875-koko-eating-bananas) |
 | [1004-max-consecutive-ones-iii](https://github.com/tarun372/problems/tree/master/1004-max-consecutive-ones-iii) |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/tarun372/problems/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
+| [2226-maximum-candies-allocated-to-k-children](https://github.com/tarun372/problems/tree/master/2226-maximum-candies-allocated-to-k-children) |
 ## Sliding Window
 |  |
 | ------- |
