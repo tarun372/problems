@@ -1,33 +1,21 @@
+from typing import List
+
 class Solution:
-    def maximumCandies(self, candies: list[int], k: int) -> int:
+    def maximumCandies(self, candies: List[int], k: int) -> int:
+        if sum(candies) < k: return 0  # Not enough candies
         
-        # SPEED HACK 1: Tighter 'high' bound.
-        # The mathematical absolute maximum candy a child could get.
-        high = sum(candies) // k
+        left, right = 1, max(candies)
+        result = 0
         
-        # If this is 0, it means we don't even have enough total candy for 1 each.
-        if high == 0:
-            return 0
-            
-        low = 1
-        best_candy_count = 0
-        
-        while low <= high:
-            mid = low + (high - low) // 2
-            
-            children_fed = 0
-            for pile in candies:
-                children_fed += pile // mid
-                
-                # SPEED HACK 2: The Early Exit
-                # We hit our goal! Stop looping through the rest of the array immediately.
-                if children_fed >= k:
-                    break
-                    
-            if children_fed >= k:
-                best_candy_count = mid
-                low = mid + 1
+        while left <= right:
+            mid = (left + right) // 2
+            if self.canDistribute(candies, k, mid):
+                result = mid
+                left = mid + 1  # Try larger `mid`
             else:
-                high = mid - 1
-                
-        return best_candy_count
+                right = mid - 1  # Try smaller `mid`
+        
+        return result
+
+    def canDistribute(self, candies: List[int], k: int, val: int) -> bool:
+        return sum(c // val for c in candies) >= k
