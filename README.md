@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0209-minimum-size-subarray-sum](https://github.com/tarun372/problems/tree/master/0209-minimum-size-subarray-sum) |
 | [0275-h-index-ii](https://github.com/tarun372/problems/tree/master/0275-h-index-ii) |
 | [0287-find-the-duplicate-number](https://github.com/tarun372/problems/tree/master/0287-find-the-duplicate-number) |
+| [0410-split-array-largest-sum](https://github.com/tarun372/problems/tree/master/0410-split-array-largest-sum) |
 | [0457-circular-array-loop](https://github.com/tarun372/problems/tree/master/0457-circular-array-loop) |
 | [0503-next-greater-element-ii](https://github.com/tarun372/problems/tree/master/0503-next-greater-element-ii) |
 | [0525-contiguous-array](https://github.com/tarun372/problems/tree/master/0525-contiguous-array) |
@@ -106,6 +107,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0409-longest-palindrome](https://github.com/tarun372/problems/tree/master/0409-longest-palindrome) |
+| [0410-split-array-largest-sum](https://github.com/tarun372/problems/tree/master/0410-split-array-largest-sum) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/tarun372/problems/tree/master/0581-shortest-unsorted-continuous-subarray) |
 ## Monotonic Stack
 |  |
@@ -124,6 +126,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0209-minimum-size-subarray-sum](https://github.com/tarun372/problems/tree/master/0209-minimum-size-subarray-sum) |
 | [0275-h-index-ii](https://github.com/tarun372/problems/tree/master/0275-h-index-ii) |
 | [0287-find-the-duplicate-number](https://github.com/tarun372/problems/tree/master/0287-find-the-duplicate-number) |
+| [0410-split-array-largest-sum](https://github.com/tarun372/problems/tree/master/0410-split-array-largest-sum) |
 | [0704-binary-search](https://github.com/tarun372/problems/tree/master/0704-binary-search) |
 | [0852-peak-index-in-a-mountain-array](https://github.com/tarun372/problems/tree/master/0852-peak-index-in-a-mountain-array) |
 | [0875-koko-eating-bananas](https://github.com/tarun372/problems/tree/master/0875-koko-eating-bananas) |
@@ -147,6 +150,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/tarun372/problems/tree/master/0209-minimum-size-subarray-sum) |
+| [0410-split-array-largest-sum](https://github.com/tarun372/problems/tree/master/0410-split-array-largest-sum) |
 | [0525-contiguous-array](https://github.com/tarun372/problems/tree/master/0525-contiguous-array) |
 | [0724-find-pivot-index](https://github.com/tarun372/problems/tree/master/0724-find-pivot-index) |
 | [1004-max-consecutive-ones-iii](https://github.com/tarun372/problems/tree/master/1004-max-consecutive-ones-iii) |
@@ -208,6 +212,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0053-maximum-subarray](https://github.com/tarun372/problems/tree/master/0053-maximum-subarray) |
 | [0152-maximum-product-subarray](https://github.com/tarun372/problems/tree/master/0152-maximum-product-subarray) |
+| [0410-split-array-largest-sum](https://github.com/tarun372/problems/tree/master/0410-split-array-largest-sum) |
 | [1186-maximum-subarray-sum-with-one-deletion](https://github.com/tarun372/problems/tree/master/1186-maximum-subarray-sum-with-one-deletion) |
 | [1749-maximum-absolute-sum-of-any-subarray](https://github.com/tarun372/problems/tree/master/1749-maximum-absolute-sum-of-any-subarray) |
 ## Quicksort
