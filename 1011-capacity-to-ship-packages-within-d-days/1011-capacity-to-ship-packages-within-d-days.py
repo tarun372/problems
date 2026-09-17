@@ -1,26 +1,40 @@
 class Solution:
-    def shipWithinDays(self, weights: list[int], days: int) -> int:
-        low = max(weights)
-        high = sum(weights)
+    def shipWithinDays(self, weights: List[int], days: int) -> int:
+        n = len(weights)
+
+        max_weight = max(weights)
+        max_packages_per_day = math.ceil(n / days)
+        max_capacity = max_packages_per_day * max_weight
+        min_capacity = max(max_weight, math.floor(sum(weights) / days))
+
+        # capacities = list(range(min_capacity, max_capacity + 1))
+
+        # apply binary search to capacities list to
+        # find which is the least 
+        left = min_capacity
+        right = max_capacity
         
-        while low < high:
-            mid = (low + high) // 2
+        while left < right:
+            middle = left + (right - left) // 2
             
-            days_needed = 1
-            curr_weight = 0
-            
-            for w in weights:
-                # If adding this weight overflows, reset for a new day
-                if curr_weight + w > mid:
-                    days_needed += 1
-                    curr_weight = 0  
-                
-                # Add the weight (happens every single loop, no 'else' needed)
-                curr_weight += w
-                
-            if days_needed > days:
-                low = mid + 1
+            if self._is_capacity_enough(middle, weights, days):
+                right = middle
             else:
-                high = mid
-                
-        return low
+                left = middle + 1
+        
+        return left
+    
+    def _is_capacity_enough(
+        self,
+        capacity: int,
+        weights: list[int],
+        days: int,
+    ) -> bool:
+        used_days = 1
+        used_capacity = 0
+        for weight in weights:
+            used_capacity += weight
+            if used_capacity > capacity:
+                used_days += 1
+                used_capacity = weight
+        return used_days <= days
