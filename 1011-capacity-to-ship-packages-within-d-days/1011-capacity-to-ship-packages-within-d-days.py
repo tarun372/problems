@@ -1,40 +1,32 @@
 class Solution:
+    def findMaxNSum(self, weights: list[int], low: int, high: int) -> tuple[int, int]:
+        for w in weights:
+            if low > w:
+                low = w
+            high += w
+        return low, high
+
+    def findMinWeights(self, weights: list[int], days: int, minWeight: int) -> bool:
+        temp = minWeight
+        i = 0
+        while i < len(weights) and days > 0:
+            if temp < weights[i]:
+                days -= 1
+                temp = minWeight
+            else:
+                temp -= weights[i]
+                i += 1
+        return i == len(weights)
+
     def shipWithinDays(self, weights: list[int], days: int) -> int:
-        
-        # 1. Set the Search Space
-        low = max(weights)   # Ship must hold at least the heaviest single package
-        high = sum(weights)  # Ship could theoretically hold everything at once
-        best_capacity = -1
-        
-        # 2. The Binary Search Loop
+        low, high = 0, 0
+        low, high = self.findMaxNSum(weights, low, high)
+        ans = 0
         while low <= high:
-            mid = low + (high - low) // 2
-            
-            # --- THE SIMULATION ---
-            # Pretend our ship's capacity is 'mid'. How many days will it take?
-            days_needed = 1
-            current_weight = 0
-            
-            for weight in weights:
-                # If adding this package sinks the ship...
-                if current_weight + weight > mid:
-                    # ...send the ship away. Wait for tomorrow!
-                    days_needed += 1
-                    current_weight = weight # Put the package on tomorrow's ship
-                else:
-                    # Otherwise, just load it onto today's ship
-                    current_weight += weight
-            # ----------------------
-            
-            # 3. React to the Result
-            if days_needed <= days:
-                # True! We shipped everything in time.
-                # Record this as a valid answer, but try to find an EVEN SMALLER ship.
-                best_capacity = mid
+            mid = (low + high) // 2
+            if self.findMinWeights(weights, days, mid):
+                ans = mid
                 high = mid - 1
             else:
-                # False! We took too many days. The ship is too tiny!
-                # We must build a bigger ship.
                 low = mid + 1
-                
-        return best_capacity
+        return ans
