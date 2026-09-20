@@ -1,29 +1,15 @@
 class Solution:
     def searchMatrix(self, matrix: list[list[int]], target: int) -> bool:
-        if not matrix or not matrix[0]:
-            return False
-            
-        m = len(matrix)       # Number of rows
-        n = len(matrix[0])    # Number of columns
-        
-        # Pretend the matrix is a 1D array
-        left = 0
-        right = m * n - 1 
+        n = len(matrix[0]) # We only keep 'n' because we divide by it frequently
+        left, right = 0, (len(matrix) * n) - 1 
         
         while left <= right:
-            mid = left + (right - left) // 2
+            mid = (left + right) // 2
             
-            # --- THE MAGIC TRANSLATION ---
-            # Translate the 1D 'mid' index back into a 2D grid coordinate
-            row = mid // n
-            col = mid % n
-            
-            mid_value = matrix[row][col]
-            # -----------------------------
-            
-            if mid_value == target:
+            # Look up the matrix value directly without storing it in a variable
+            if matrix[mid // n][mid % n] == target:
                 return True
-            elif mid_value < target:
+            elif matrix[mid // n][mid % n] < target:
                 left = mid + 1
             else:
                 right = mid - 1
