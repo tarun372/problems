@@ -1,28 +1,33 @@
 class Solution:
     def findKthNumber(self, m: int, n: int, k: int) -> int:
-        # 1. Set the boundaries (1 to max possible value)
+        # HACK 1: Always loop over the smaller dimension
+        if m > n:
+            m, n = n, m
+            
         left = 1
         right = m * n
         
         while left < right:
-            mid = left + (right - left) // 2
+            mid = (left + right) // 2
             
-            # --- THE VALIDATOR ---
             count = 0
-            # Check every row from 1 up to 'm'
+            # Inline simulation for maximum speed
             for i in range(1, m + 1):
-                # Count how many multiples of 'i' are <= mid.
-                # It caps out at 'n' (the end of the row).
-                count += min(mid // i, n)
-            # ----------------------
-            
-            # 3. React to the Result
+                val = mid // i
+                
+                # HACK 2: Early Exit
+                if val == 0:
+                    break
+                    
+                # HACK 3: No function calls
+                if val > n:
+                    count += n
+                else:
+                    count += val
+                    
             if count < k:
-                # We didn't find enough small numbers. Guess higher.
                 left = mid + 1
             else:
-                # We found k or more! 'mid' is a potential answer.
-                # Squeeze the upper bound down to find the exact first occurrence.
                 right = mid
                 
         return left
