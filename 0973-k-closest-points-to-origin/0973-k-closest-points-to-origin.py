@@ -1,20 +1,16 @@
-import heapq
-from typing import List
-
 class Solution:
-    def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
-        min_heap = []
+    def kClosest(self, points: list[list[int]], k: int) -> list[list[int]]:
+        
+        distance = [point[0]**2 + point[1]**2 for point in points]
+        hp = distance.copy()
+        heapq.heapify(hp)
 
-        for point in points:
-            dist = self.calc_distance(point[0], point[1])
-            heapq.heappush(min_heap, (dist, point))
+        for i in range(k):
+            thresh = heapq.heappop(hp)
 
-        ans = []
-        for _ in range(k):
-            _, point = heapq.heappop(min_heap)
-            ans.append(point)
-
-        return ans
-
-    def calc_distance(self, x: int, y: int) -> int:
-        return x * x + y * y
+        res = []
+        for i in range(len(distance)):
+            if distance[i] <= thresh:
+                res.append(points[i])
+        
+        return res
