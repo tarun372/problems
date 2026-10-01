@@ -86,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/tarun372/problems/tree/master/0621-task-scheduler) |
 | [0658-find-k-closest-elements](https://github.com/tarun372/problems/tree/master/0658-find-k-closest-elements) |
 | [0692-top-k-frequent-words](https://github.com/tarun372/problems/tree/master/0692-top-k-frequent-words) |
+| [0767-reorganize-string](https://github.com/tarun372/problems/tree/master/0767-reorganize-string) |
 | [0973-k-closest-points-to-origin](https://github.com/tarun372/problems/tree/master/0973-k-closest-points-to-origin) |
 | [0977-squares-of-a-sorted-array](https://github.com/tarun372/problems/tree/master/0977-squares-of-a-sorted-array) |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/tarun372/problems/tree/master/1337-the-k-weakest-rows-in-a-matrix) |
@@ -104,6 +105,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0438-find-all-anagrams-in-a-string](https://github.com/tarun372/problems/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0567-permutation-in-string](https://github.com/tarun372/problems/tree/master/0567-permutation-in-string) |
 | [0692-top-k-frequent-words](https://github.com/tarun372/problems/tree/master/0692-top-k-frequent-words) |
+| [0767-reorganize-string](https://github.com/tarun372/problems/tree/master/0767-reorganize-string) |
 | [0844-backspace-string-compare](https://github.com/tarun372/problems/tree/master/0844-backspace-string-compare) |
 | [1047-remove-all-adjacent-duplicates-in-string](https://github.com/tarun372/problems/tree/master/1047-remove-all-adjacent-duplicates-in-string) |
 | [1189-maximum-number-of-balloons](https://github.com/tarun372/problems/tree/master/1189-maximum-number-of-balloons) |
@@ -132,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0410-split-array-largest-sum](https://github.com/tarun372/problems/tree/master/0410-split-array-largest-sum) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/tarun372/problems/tree/master/0581-shortest-unsorted-continuous-subarray) |
 | [0621-task-scheduler](https://github.com/tarun372/problems/tree/master/0621-task-scheduler) |
+| [0767-reorganize-string](https://github.com/tarun372/problems/tree/master/0767-reorganize-string) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -205,6 +208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/tarun372/problems/tree/master/0567-permutation-in-string) |
 | [0621-task-scheduler](https://github.com/tarun372/problems/tree/master/0621-task-scheduler) |
 | [0692-top-k-frequent-words](https://github.com/tarun372/problems/tree/master/0692-top-k-frequent-words) |
+| [0767-reorganize-string](https://github.com/tarun372/problems/tree/master/0767-reorganize-string) |
 | [0904-fruit-into-baskets](https://github.com/tarun372/problems/tree/master/0904-fruit-into-baskets) |
 | [1189-maximum-number-of-balloons](https://github.com/tarun372/problems/tree/master/1189-maximum-number-of-balloons) |
 ## Linked List
@@ -280,6 +284,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0387-first-unique-character-in-a-string](https://github.com/tarun372/problems/tree/master/0387-first-unique-character-in-a-string) |
 | [0621-task-scheduler](https://github.com/tarun372/problems/tree/master/0621-task-scheduler) |
 | [0692-top-k-frequent-words](https://github.com/tarun372/problems/tree/master/0692-top-k-frequent-words) |
+| [0767-reorganize-string](https://github.com/tarun372/problems/tree/master/0767-reorganize-string) |
 | [1189-maximum-number-of-balloons](https://github.com/tarun372/problems/tree/master/1189-maximum-number-of-balloons) |
 ## Ternary Search
 |  |
@@ -301,6 +306,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/tarun372/problems/tree/master/0621-task-scheduler) |
 | [0658-find-k-closest-elements](https://github.com/tarun372/problems/tree/master/0658-find-k-closest-elements) |
 | [0692-top-k-frequent-words](https://github.com/tarun372/problems/tree/master/0692-top-k-frequent-words) |
+| [0767-reorganize-string](https://github.com/tarun372/problems/tree/master/0767-reorganize-string) |
 | [0973-k-closest-points-to-origin](https://github.com/tarun372/problems/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/tarun372/problems/tree/master/1046-last-stone-weight) |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/tarun372/problems/tree/master/1337-the-k-weakest-rows-in-a-matrix) |
