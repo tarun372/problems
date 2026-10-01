@@ -1,34 +1,35 @@
-import heapq
 from collections import Counter
 
 class Solution:
     def reorganizeString(self, s: str) -> str:
         count = Counter(s)
-        # Build Max-Heap format: [-frequency, character]
-        max_heap = [[-cnt, char] for char, cnt in count.items()]
-        heapq.heapify(max_heap)
         
-        prev = None  # Acts as our cooldown waiting room
-        res = []
+        # Find the absolute most frequent character
+        max_char = max(count, key=count.get)
+        max_cnt = count[max_char]
         
-        while max_heap or prev:
-            # If the heap is empty but we still have a character waiting to be placed,
-            # we are forced to place it back-to-back. It's impossible!
-            if not max_heap and prev:
-                return ""
+        # Pigeonhole Principle: If it appears too many times, it's impossible.
+        if max_cnt > (len(s) + 1) // 2:
+            return ""
             
-            # 1. Grab the most frequent available character
-            cnt, char = heapq.heappop(max_heap)
-            res.append(char)
-            cnt += 1  # It's negative, so adding 1 reduces its remaining count
+        res = [''] * len(s)
+        idx = 0
+        
+        # 1. Place the most frequent character at all the even indices first
+        while count[max_char] > 0:
+            res[idx] = max_char
+            idx += 2
+            count[max_char] -= 1
             
-            # 2. Release the previous character from the waiting room back into the heap
-            if prev:
-                heapq.heappush(max_heap, prev)
-                prev = None
-                
-            # 3. If our current character still needs to be placed, put it in the waiting room
-            if cnt != 0:
-                prev = [cnt, char]
+        # 2. Blindly fill the remaining spots with the other characters
+        for char, cnt in count.items():
+            while count[char] > 0:
+                # If we reach the end of the array, wrap around to the odd indices
+                if idx >= len(s):
+                    idx = 1
+                    
+                res[idx] = char
+                idx += 2
+                count[char] -= 1
                 
         return "".join(res)
