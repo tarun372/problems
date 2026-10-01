@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0503-next-greater-element-ii](https://github.com/tarun372/problems/tree/master/0503-next-greater-element-ii) |
 | [0525-contiguous-array](https://github.com/tarun372/problems/tree/master/0525-contiguous-array) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/tarun372/problems/tree/master/0581-shortest-unsorted-continuous-subarray) |
+| [0621-task-scheduler](https://github.com/tarun372/problems/tree/master/0621-task-scheduler) |
 | [0658-find-k-closest-elements](https://github.com/tarun372/problems/tree/master/0658-find-k-closest-elements) |
 | [0692-top-k-frequent-words](https://github.com/tarun372/problems/tree/master/0692-top-k-frequent-words) |
 | [0704-binary-search](https://github.com/tarun372/problems/tree/master/0704-binary-search) |
@@ -82,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/tarun372/problems/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/tarun372/problems/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/tarun372/problems/tree/master/0581-shortest-unsorted-continuous-subarray) |
+| [0621-task-scheduler](https://github.com/tarun372/problems/tree/master/0621-task-scheduler) |
 | [0658-find-k-closest-elements](https://github.com/tarun372/problems/tree/master/0658-find-k-closest-elements) |
 | [0692-top-k-frequent-words](https://github.com/tarun372/problems/tree/master/0692-top-k-frequent-words) |
 | [0973-k-closest-points-to-origin](https://github.com/tarun372/problems/tree/master/0973-k-closest-points-to-origin) |
@@ -129,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0409-longest-palindrome](https://github.com/tarun372/problems/tree/master/0409-longest-palindrome) |
 | [0410-split-array-largest-sum](https://github.com/tarun372/problems/tree/master/0410-split-array-largest-sum) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/tarun372/problems/tree/master/0581-shortest-unsorted-continuous-subarray) |
+| [0621-task-scheduler](https://github.com/tarun372/problems/tree/master/0621-task-scheduler) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -200,6 +203,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0457-circular-array-loop](https://github.com/tarun372/problems/tree/master/0457-circular-array-loop) |
 | [0525-contiguous-array](https://github.com/tarun372/problems/tree/master/0525-contiguous-array) |
 | [0567-permutation-in-string](https://github.com/tarun372/problems/tree/master/0567-permutation-in-string) |
+| [0621-task-scheduler](https://github.com/tarun372/problems/tree/master/0621-task-scheduler) |
 | [0692-top-k-frequent-words](https://github.com/tarun372/problems/tree/master/0692-top-k-frequent-words) |
 | [0904-fruit-into-baskets](https://github.com/tarun372/problems/tree/master/0904-fruit-into-baskets) |
 | [1189-maximum-number-of-balloons](https://github.com/tarun372/problems/tree/master/1189-maximum-number-of-balloons) |
@@ -274,6 +278,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/tarun372/problems/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/tarun372/problems/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/tarun372/problems/tree/master/0387-first-unique-character-in-a-string) |
+| [0621-task-scheduler](https://github.com/tarun372/problems/tree/master/0621-task-scheduler) |
 | [0692-top-k-frequent-words](https://github.com/tarun372/problems/tree/master/0692-top-k-frequent-words) |
 | [1189-maximum-number-of-balloons](https://github.com/tarun372/problems/tree/master/1189-maximum-number-of-balloons) |
 ## Ternary Search
@@ -293,6 +298,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/tarun372/problems/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/tarun372/problems/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/tarun372/problems/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0621-task-scheduler](https://github.com/tarun372/problems/tree/master/0621-task-scheduler) |
 | [0658-find-k-closest-elements](https://github.com/tarun372/problems/tree/master/0658-find-k-closest-elements) |
 | [0692-top-k-frequent-words](https://github.com/tarun372/problems/tree/master/0692-top-k-frequent-words) |
 | [0973-k-closest-points-to-origin](https://github.com/tarun372/problems/tree/master/0973-k-closest-points-to-origin) |
