@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/tarun372/problems/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0410-split-array-largest-sum](https://github.com/tarun372/problems/tree/master/0410-split-array-largest-sum) |
 | [0457-circular-array-loop](https://github.com/tarun372/problems/tree/master/0457-circular-array-loop) |
+| [0480-sliding-window-median](https://github.com/tarun372/problems/tree/master/0480-sliding-window-median) |
 | [0502-ipo](https://github.com/tarun372/problems/tree/master/0502-ipo) |
 | [0503-next-greater-element-ii](https://github.com/tarun372/problems/tree/master/0503-next-greater-element-ii) |
 | [0525-contiguous-array](https://github.com/tarun372/problems/tree/master/0525-contiguous-array) |
@@ -181,6 +182,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0209-minimum-size-subarray-sum](https://github.com/tarun372/problems/tree/master/0209-minimum-size-subarray-sum) |
 | [0424-longest-repeating-character-replacement](https://github.com/tarun372/problems/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/tarun372/problems/tree/master/0438-find-all-anagrams-in-a-string) |
+| [0480-sliding-window-median](https://github.com/tarun372/problems/tree/master/0480-sliding-window-median) |
 | [0567-permutation-in-string](https://github.com/tarun372/problems/tree/master/0567-permutation-in-string) |
 | [0658-find-k-closest-elements](https://github.com/tarun372/problems/tree/master/0658-find-k-closest-elements) |
 | [0904-fruit-into-baskets](https://github.com/tarun372/problems/tree/master/0904-fruit-into-baskets) |
@@ -209,6 +211,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/tarun372/problems/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/tarun372/problems/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0457-circular-array-loop](https://github.com/tarun372/problems/tree/master/0457-circular-array-loop) |
+| [0480-sliding-window-median](https://github.com/tarun372/problems/tree/master/0480-sliding-window-median) |
 | [0525-contiguous-array](https://github.com/tarun372/problems/tree/master/0525-contiguous-array) |
 | [0567-permutation-in-string](https://github.com/tarun372/problems/tree/master/0567-permutation-in-string) |
 | [0621-task-scheduler](https://github.com/tarun372/problems/tree/master/0621-task-scheduler) |
@@ -309,6 +312,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/tarun372/problems/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/tarun372/problems/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/tarun372/problems/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0480-sliding-window-median](https://github.com/tarun372/problems/tree/master/0480-sliding-window-median) |
 | [0502-ipo](https://github.com/tarun372/problems/tree/master/0502-ipo) |
 | [0621-task-scheduler](https://github.com/tarun372/problems/tree/master/0621-task-scheduler) |
 | [0658-find-k-closest-elements](https://github.com/tarun372/problems/tree/master/0658-find-k-closest-elements) |
@@ -348,4 +352,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/tarun372/problems/tree/master/0295-find-median-from-data-stream) |
+## Treap
+|  |
+| ------- |
+| [0480-sliding-window-median](https://github.com/tarun372/problems/tree/master/0480-sliding-window-median) |
 <!---LeetCode Topics End-->
