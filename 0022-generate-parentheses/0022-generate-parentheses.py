@@ -1,20 +1,27 @@
 class Solution:
     def generateParenthesis(self, n: int) -> list[str]:
         res = []
+        stack = [] # We use this to build the string piece by piece
         
-        def backtrack(open_count, close_count, path_str):
-            # Base Case: String is full
-            if len(path_str) == 2 * n:
-                res.append(path_str)
+        def backtrack(open_count, close_count):
+            
+            # 1. Base Case: If we have 'n' open and 'n' close, we are done
+            if open_count == n and close_count == n:
+                res.append("".join(stack))
                 return
                 
-            # Rule 1: We can still add an open bracket
+            # 2. Add an Open bracket (if we still have some left)
             if open_count < n:
-                backtrack(open_count + 1, close_count, path_str + "(")
+                stack.append("(")                        # Choose
+                backtrack(open_count + 1, close_count)   # Explore
+                stack.pop()                              # Un-choose
                 
-            # Rule 2: We have more open brackets than closed ones
+            # 3. Add a Close bracket (if there are unpaired open brackets)
             if close_count < open_count:
-                backtrack(open_count, close_count + 1, path_str + ")")
+                stack.append(")")                        # Choose
+                backtrack(open_count, close_count + 1)   # Explore
+                stack.pop()                              # Un-choose
                 
-        backtrack(0, 0, "")
+        # Start with 0 open and 0 closed brackets
+        backtrack(0, 0)
         return res
