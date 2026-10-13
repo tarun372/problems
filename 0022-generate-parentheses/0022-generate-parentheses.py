@@ -1,21 +1,20 @@
 class Solution:
     def generateParenthesis(self, n: int) -> list[str]:
+        res = []
         
-        # We turn the backtracking function into a Generator using 'yield'
-        def generate(open_count, close_count, path):
-            # Base Case: When the string is done, 'yield' it out
-            if len(path) == 2 * n:
-                yield path
+        def backtrack(open_count, close_count, path_str):
+            # Base Case: String is full
+            if len(path_str) == 2 * n:
+                res.append(path_str)
                 return
                 
-            # Decision 1: Add '('
+            # Rule 1: We can still add an open bracket
             if open_count < n:
-                # 'yield from' bubbles the generated strings up the call stack
-                yield from generate(open_count + 1, close_count, path + '(')
+                backtrack(open_count + 1, close_count, path_str + "(")
                 
-            # Decision 2: Add ')'
+            # Rule 2: We have more open brackets than closed ones
             if close_count < open_count:
-                yield from generate(open_count, close_count + 1, path + ')')
+                backtrack(open_count, close_count + 1, path_str + ")")
                 
-        # list() consumes the generator all at once, taking memory only at the very end
-        return list(generate(0, 0, ""))
+        backtrack(0, 0, "")
+        return res
