@@ -1,32 +1,26 @@
-from collections import deque
-
 class Solution:
     def zigzagLevelOrder(self, root: Optional[TreeNode]) -> list[list[int]]:
         if not root:
             return []
             
         res = []
-        queue = deque([root])
-        left_to_right = True  # Tracks the current floor's direction
+        curr_level = [root]
+        reverse = False
         
-        while queue:
-            level = []
-            level_size = len(queue)
+        while curr_level:
+            next_level = []
+            vals = []
             
-            for _ in range(level_size):
-                node = queue.popleft()
-                level.append(node.val)
-                
+            # Direct list iteration is much faster in Python than deque.popleft()
+            for node in curr_level:
+                vals.append(node.val)
                 if node.left:
-                    queue.append(node.left)
+                    next_level.append(node.left)
                 if node.right:
-                    queue.append(node.right)
+                    next_level.append(node.right)
                     
-            # The Twist: Reverse the list on right-to-left floors
-            if not left_to_right:
-                level.reverse()
-                
-            res.append(level)
-            left_to_right = not left_to_right  # Flip direction for the next floor
+            res.append(vals[::-1] if reverse else vals)
+            curr_level = next_level
+            reverse = not reverse
             
         return res
